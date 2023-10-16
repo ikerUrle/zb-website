@@ -4,7 +4,7 @@
 		:class="{'bg-dark-600/54' : isMenuOpen}">
 
 	<div class="flex justify-between items-center sticky top-0 text-red-500" >
-	<img src="/logo-header.svg">
+	<img src="/zb-website/logo-header.svg">
 		<span class="i-carbon-menu text-5xl" @click="isMenuOpen = !isMenuOpen">
 		</span>
 	</div>
