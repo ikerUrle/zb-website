@@ -1,7 +1,12 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
+import Topbar from '../components/Topbar.vue'
 interface Props {
 	title: string;
 }
+
+const currentPath = new URL(Astro.request.url).pathname;
+// const currentPath = pathname.slice(1); // remove the first "/"
 
 const { title } = Astro.props;
 ---
@@ -9,6 +14,7 @@ const { title } = Astro.props;
 <!doctype html>
 <html lang="en">
 	<head>
+		<ViewTransitions />
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
@@ -17,10 +23,11 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
+		<Topbar client:visible currentPath={currentPath}/>
 		<slot />
 	</body>
 </html>
-<style is:global>
+<style is:global >
 import 'fonts/Noirden-ExtraLight.css';
 import 'fonts/Noirden-Light.css';
 import 'fonts/Noirden-Regular.css';
@@ -43,7 +50,19 @@ import 'fonts/Noirden-SemiBold.css';
 	html {
 		font-family: system-ui, sans-serif;
 		height: 100dvh;
+		color: #fff;
+		background-size: cover; 
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-blend-mode: hard-light;
+		background-color: #000;
+		background-position: center;
+		/* display: flex; */
+		/* flex-direction: column; */
 	}
+body {
+	height: 100dvh;
+}
 	code {
 		font-family:
 			Menlo,

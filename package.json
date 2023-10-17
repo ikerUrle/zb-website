@@ -19,5 +19,8 @@
     "@unocss/reset": "^0.56.5",
     "astro": "^3.3.0",
     "vue": "^3.2.30"
+  },
+  "devDependencies": {
+    "@unocss/transformer-variant-group": "^0.56.5"
   }
 }

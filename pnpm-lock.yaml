@@ -30,6 +30,11 @@ dependencies:
     specifier: ^3.2.30
     version: 3.3.4
 
+devDependencies:
+  '@unocss/transformer-variant-group':
+    specifier: ^0.56.5
+    version: 0.56.5
+
 packages:
 
   /@ampproject/remapping@2.2.1:
@@ -1028,7 +1033,6 @@ packages:
 
   /@unocss/core@0.56.5:
     resolution: {integrity: sha512-fx5VhOjSHn0HdV2D34pEwFMAHJcJQRTCp1xEE4GzxY1irXzaa+m2aYf5PZjmDxehiOC16IH7TO9FOWANXk1E0w==}
-    dev: false
 
   /@unocss/extractor-arbitrary-variants@0.56.5:
     resolution: {integrity: sha512-p2pyzz/ONvc5CGcaB9OZvWE8qkRSgyuhaQqFQLdBFeUhveHC0CGP0iSnXwBgAFHWM7DJo4/JpWeZ+mBt0ogVLA==}
@@ -1101,6 +1105,12 @@ packages:
       '@unocss/rule-utils': 0.56.5
       css-tree: 2.3.1
     dev: false
+
+  /@unocss/transformer-variant-group@0.56.5:
+    resolution: {integrity: sha512-e+7XtICuOtcOgGyxI06i0LK6R446KLFvzv+lw3WbwhD8OcsSFUAtCaAw0l+cyyiiZ/k2tLdUR0O4hYwQVa8f1A==}
+    dependencies:
+      '@unocss/core': 0.56.5
+    dev: true
 
   /@unocss/vite@0.56.5(vite@4.4.11):
     resolution: {integrity: sha512-X4nvIukXTH//d+Oc97nJogK04sVGw4fc5LhVV1DjHQVmAOAmhTJCG6SxWGoSeqqUMx5X3gI9fVILK+5O8yl5EA==}

@@ -1,0 +1,54 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Concerts from '../components/Concerts.vue';
+import { Image } from 'astro:assets';
+
+import photo1 from '../assets/photos/1.jpg';
+import photo2 from '../assets/photos/2.jpg';
+import photo3 from '../assets/photos/3.jpg';
+import photo4 from '../assets/photos/4.jpg';
+import photo5 from '../assets/photos/5.jpg';
+
+---
+<Layout title="Zirkinik bez! | Argazkiak">
+		<main class="p-4 flex flex-col">
+		<h1 class="text-6xl mb-8">Argazkiak</h1>
+		<div class="flex flex-col gap-2 overflow-auto lg:(!grid !grid-cols-2) pb-4">
+			<Image src={photo1} alt="Erlantz trikia jotzen"/>
+			<Image src={photo2} alt="Erlantz trikia jotzen"/>
+			<Image src={photo3} alt="Erlantz trikia jotzen"/>
+			<Image src={photo4} alt="Erlantz trikia jotzen"/>
+			<Image src={photo5} alt="Erlantz trikia jotzen"/>
+		</div>
+	</main>
+</Layout>
+
+
+<style>
+/* @media only screen  */
+/* and (min-width : 768px)  */
+/* and (max-width : 1024px) { */
+/* 	html { */
+/* 		--bg: url('/zb-website/bg-md.png'); */
+/* 	} */
+/**/
+/* } */
+/**/
+/* @media only screen  */
+/* and (min-width : 1224px) { */
+/* 	html { */
+/* 		--bg: url('/zb-website/bg-lg.png'); */
+/* 	} */
+/* } */
+/* @media only screen  */
+/* and (min-width : 1824px) { */
+/* 	html { */
+/* 		--bg: url('/zb-website/bg-xl.png'); */
+/* 		color: yellow !important; */
+/* 	} */
+/* } */
+html {
+	/* If you add url in "layout" it breaks WTF */
+	background-image: url('/zb-website/bg-xl.png');
+}
+</style>

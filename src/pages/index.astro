@@ -10,25 +10,16 @@ import Bg from '../components/Bg.vue';
 ---
 
 <Layout title="Zirkinik bez!">
-		<Topbar client:visible />
 		<main class="p-4 flex flex-col">
 		<Section1 />
 		<Section2 />
-		<!-- <Contact /> -->
 	</main>
-		<!-- <Bg /> -->
 </Layout>
 
 <style>
+
 html {
-	color: #fff;
-	background-image: url('/bg-2.png');
-  background-size: cover; 
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-	background-blend-mode: hard-light;
-	background-color: #000;
-	display: flex;
-	flex-direction: column;
+	/* If you add url in "layout" it breaks WTF */
+	background-image: url('/zb-website/bg-xl.png');
 }
 </style>
