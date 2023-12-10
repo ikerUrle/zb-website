@@ -4,7 +4,7 @@
 			<img src="/zb-website/logo-header.svg" class="w-80 fill-blue-500">
 			<span class="lg:hidden i-carbon-menu text-5xl" @click="isMenuOpen = !isMenuOpen" />
 			<div class="<lg:hidden lg:visible">
-				<ul class="flex gap-8 text-4xl mr-8 font-light">
+				<ul class="flex gap-8 text-4xl mr-8 font-200">
 					<li v-for="elem in elems">
 						<a :href="elem.path" :class="{ 'text-red-500': elem.path === currentPath }" @click="isMenuOpen = !isMenuOpen">
 							{{ elem.label }}

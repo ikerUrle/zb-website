@@ -3,23 +3,16 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Topbar from '../components/Topbar.vue';
 import CtaButton from '../components/CtaButton.vue';
-import Section1 from '../components/Section1.vue';
-import Section2 from '../components/Section2.vue';
+import Hero from '../components/Hero.vue';
+import Concerts from '../components/Concerts.vue';
 import Contact from '../components/Contact.vue';
 import Bg from '../components/Bg.vue';
 ---
 
 <Layout title="Zirkinik bez!">
-		<main class="flex flex-col">
-		<Section1 />
-		<Section2 />
+		<main class="flex flex-col font-sans">
+		<Hero />
+		<Concerts />
+		<Contact />
 	</main>
 </Layout>
-
-<style>
-
-html {
-	/* If you add url in "layout" it breaks WTF */
-	/* background-image: url('/zb-website/bg-xl.png'); */
-}
-</style>

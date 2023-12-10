@@ -1,5 +1,5 @@
 <template>
-	<section class="">
+	<section class="pb-46 px-8 lg:(px-20)">
 		<h2 id="kontaktua" class="pt-26 lg:pt-36 mt-20 text-5xl text-red-700 font-bold uppercase">
 			Kontaktua
 		</h2>

@@ -1,6 +1,7 @@
 <template>
 	<li class="relative flex flex-col w-full" :style="`background-image: url('/zb-website/contact/${image}.png')`">
-		<a :href="link" class="flex flex-col z-1 items-center py-10 lg:py-40 text-4xl text-light-600">
+		<a :href="link"
+			class="flex flex-col gap-2 z-1 items-center py-10 lg:(py-40 text-4xl font-300) text-light-600 font-200 text-3xl">
 			<span :class="icon" class="text-6xl" />
 			{{ text }}
 		</a>
@@ -37,7 +38,7 @@ li {
 	background: linear-gradient(rgba(171, 171, 171, 0.2), rgba(71, 71, 71, 0.8));
 }
 
-li:hover .gradient-overlay{
+li:hover .gradient-overlay {
 	background: linear-gradient(rgba(171, 171, 171, 0.8), rgba(71, 71, 71, 0.8));
 }
 </style>

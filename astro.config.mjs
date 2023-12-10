@@ -4,11 +4,12 @@ import vue from "@astrojs/vue";
 import UnoCSS from '@unocss/astro';
 import presetUno from '@unocss/preset-uno';
 import presetIcons from '@unocss/preset-icons';
-  import transformerVariantGroup from '@unocss/transformer-variant-group';
+import presetWebFonts from '@unocss/preset-web-fonts';
+import transformerVariantGroup from '@unocss/transformer-variant-group';
 
 // https://astro.build/config
 export default defineConfig({
-   site: 'https://ikerurle.github.io',
+  site: 'https://ikerurle.github.io',
   base: '/zb-website',
   integrations: [
     vue(),
@@ -20,7 +21,16 @@ export default defineConfig({
       ],
       presets: [
         presetUno(),
-        presetIcons()
+        presetIcons(),
+        presetWebFonts({
+          provider: 'google',
+          fonts: {
+            sans: {
+              name: 'Poppins',
+              weights: ['100','200','300','400','500','600','700','800','900']
+            }
+          }
+        })
       ]
     })
   ]

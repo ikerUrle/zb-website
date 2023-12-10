@@ -21,6 +21,7 @@
     "vue": "^3.2.30"
   },
   "devDependencies": {
+    "@unocss/preset-web-fonts": "^0.58.0",
     "@unocss/transformer-variant-group": "^0.56.5",
     "sharp": "^0.32.6"
   }

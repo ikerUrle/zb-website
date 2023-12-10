@@ -9,7 +9,7 @@
 				{{ date.date }}
 			</span>
 		</span>
-		<span class="<lg:hidden lg:visible z-1 font-semi pt-40 pr-20 whitespace-pre">
+		<span class="<lg:hidden lg:visible z-1 font-semi pt-60 pr-20 whitespace-pre">
 			{{ date.city }} | {{ date.date }}
 		</span>
 		<div class="gradient-overlay" />
@@ -33,7 +33,6 @@ const i = props.index % numImages;
 </script>
 <style>
 .card {
-	/* background-image: url('/zb-website/cards/2.png'); */
 	background-position: top;
 	background-size: cover;
 	background-repeat: no-repeat;
