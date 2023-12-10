@@ -1,5 +1,5 @@
 <template>
-	<div class="card relative flex flex-col p-4 py-8 pr-16 text-4xl bg-dark-800/70"
+	<li class="card relative flex flex-col p-4 py-8 pr-16 text-4xl bg-dark-800/70"
 		:style="` background-image: url('/zb-website/cards/${i}.png');`">
 		<span class="lg:hidden z-1 font-semi pt-40 pr-20 whitespace-pre flex flex-col">
 			<span class="font-thin">
@@ -13,7 +13,7 @@
 			{{ date.city }} | {{ date.date }}
 		</span>
 		<div class="gradient-overlay" />
-	</div>
+	</li>
 </template>
 
 

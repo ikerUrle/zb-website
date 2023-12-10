@@ -17,7 +17,7 @@ const paragraph = "Ska, rock zein punk doinuak zuen herriko oholtzara eramaterko
 
 <style scoped>
 section {
-	background-image: url('/zb-website/header.png');
+	background-image: url('/zb-website/header.webp');
 	background-position: right;
 	background-size: cover;
 	background-repeat: no-repeat;
