@@ -1,25 +1,50 @@
 <template>
-	<div class="flex flex-col p-4 py-8 pr-16 border-l-4 border-red-500 text-4xl bg-dark-800/70">
-		<span class="flex gap-2 text-4xl mb-2">
-		<h3 class="font-semi">
-			{{date.city}}
-		</h3>
-			<p class="font-thin text-dark-100">({{date.prov}})</p>
+	<div class="card relative flex flex-col p-4 py-8 pr-16 text-4xl bg-dark-800/70"
+		:style="` background-image: url('/zb-website/cards/${i}.png');`">
+		<span class="lg:hidden z-1 font-semi pt-40 pr-20 whitespace-pre flex flex-col">
+			<span class="font-thin">
+				{{ date.city }}
+			</span>
+			<span>
+				{{ date.date }}
+			</span>
 		</span>
-		<h4 class="font-thin">
-			{{date.date}}
-		</h4>
+		<span class="<lg:hidden lg:visible z-1 font-semi pt-40 pr-20 whitespace-pre">
+			{{ date.city }} | {{ date.date }}
+		</span>
+		<div class="gradient-overlay" />
 	</div>
-
 </template>
 
 
 <script setup lang="ts">
-import type {Date} from '../utils'
+import type { Date } from '../utils'
 
 type Props = {
 	date: Date,
+	index: number
 }
 
-defineProps<Props>()
+const props = defineProps<Props>()
+
+const numImages = 6
+const i = props.index % numImages;
+
 </script>
+<style>
+.card {
+	/* background-image: url('/zb-website/cards/2.png'); */
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.gradient-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(171, 171, 171, 0.2), rgba(71, 71, 71, 0.8));
+}
+</style>

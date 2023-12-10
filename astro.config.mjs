@@ -8,7 +8,7 @@ import presetIcons from '@unocss/preset-icons';
 
 // https://astro.build/config
 export default defineConfig({
-   site: 'https://ikerurl.github.io',
+   site: 'https://ikerurle.github.io',
   base: '/zb-website',
   integrations: [
     vue(),
