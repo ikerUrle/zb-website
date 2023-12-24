@@ -1,6 +1,6 @@
 <template>
 	<section id="hasiera" class="flex flex-col gap-2 h-180 px-10 lg:(px-20 pt-6) w-full flex-grow">
-		<img src="/zb-website/logo-header2.svg" class="w-60 lg:(w-80 -ml-16 -mt-2) -ml-4 mt-4">
+		<img src="/zb-website/logo-header.svg" class="w-60 lg:(w-80 -ml-16 -mt-2) -ml-4 mt-4" alt="Zirkinik bez logoa">
 		<h1 class="text-6xl pt-36 lg:(text-8xl pt-36) font-400 text-light-200">{{ header }}</h1>
 		<p class="text-2xl lg:text-4xl font-200 text-light-mt-8 max-w-200">
 			{{ paragraph }}

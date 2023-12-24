@@ -1,5 +1,5 @@
 <template>
-	<li class="relative flex flex-col w-full" :style="`background-image: url('/zb-website/contact/${image}.png')`">
+	<li class="relative flex flex-col w-full" :style="`background-image: url('/zb-website/contact/${image}.webp')`">
 		<a :href="link"
 			class="flex flex-col gap-2 z-1 items-center py-10 lg:(py-40 text-4xl font-300) text-light-600 font-200 text-3xl">
 			<span :class="icon" class="text-6xl" />
