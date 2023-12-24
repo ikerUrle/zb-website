@@ -5,7 +5,7 @@ interface Props {
 	title: string;
 }
 
-const currentPath = new URL(Astro.request.url).pathname;
+const currentPath = new URL(Astro.request.url);
 const { title } = Astro.props;
 ---
 
@@ -20,8 +20,8 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-		<Topbar client:visible currentPath={currentPath}/>
+	<body class="">
+		<Topbar client:only />
 		<slot />
 	</body>
 </html>

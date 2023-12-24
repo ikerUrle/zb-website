@@ -1,9 +1,9 @@
 <template>
-	<li class="card relative flex flex-col p-4 py-8 pr-16 text-4xl bg-dark-800/70"
-		:style="` background-image: url('/zb-website/cards/${i}.png');`">
-		<span class="lg:hidden z-1 font-semi pt-40 pr-20 whitespace-pre flex flex-col">
+	<li class="card relative flex flex-col p-4 py-8 pr-8 lg:pr-16 text-4xl bg-dark-800/70"
+		:style="`background-image: url('/zb-website/cards/${i}.webp');`">
+		<span class="lg:hidden z-1 font-semi pt-40 pr-20 whitespace-pre flex flex-col min-w-60">
 			<span class="font-thin">
-				{{ date.city }}
+				{{ date.city || " "}}
 			</span>
 			<span>
 				{{ date.date }}
@@ -36,6 +36,7 @@ const i = props.index % numImages;
 	background-position: top;
 	background-size: cover;
 	background-repeat: no-repeat;
+	width:400px !important;
 }
 
 .gradient-overlay {
