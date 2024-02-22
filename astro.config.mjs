@@ -26,7 +26,7 @@ export default defineConfig({
           provider: 'google',
           fonts: {
             sans: {
-              name: 'Poppins',
+              name: 'ABeeZee',
               weights: ['100','200','300','400','500','600','700','800','900']
             }
           }

@@ -5,7 +5,7 @@ export type Date = {
 }
 export const dates: Date[] = [
 	{
-		city: "???",
+		city: "Mungia",
 		date: "Uztailak 26",
 		extra: ""
 	},
