@@ -1,23 +1,23 @@
 export type Date = {
 	city: string,
-	date: string,
+	date: string | null,
 	extra: string,
 }
 export const dates: Date[] = [
 	{
 		city: "Mungia",
-		date: "Uztailak 26",
+		date: "2024-06-15",
 		extra: ""
 	},
 	{
-		city: "???",
-		date: "Irailak 29",
+		city: "Gernika",
+		date: "2024-01-15",
 		extra: ""
 	},
 	{
 		city: "",
-		date: "Laster gehiago",
-		extra: ""
+		date: null,
+		extra: "Laster gehiago"
 	},
 	// {
 	// 	city: "Bilbo",
