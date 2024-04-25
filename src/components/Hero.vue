@@ -1,33 +1,53 @@
 <template>
-	<section id="hasiera" class="flex flex-col gap-2 h-180 px-10 lg:(px-20 pt-6) w-full flex-grow">
-		<img src="/zb-website/logo-header.svg" class="w-60 lg:(w-80 -ml-16 -mt-2) -ml-4 mt-4" alt="Zirkinik bez logoa">
-		<h1 class="text-6xl pt-36 lg:(text-8xl pt-36) font-400 text-light-200">{{ header }}</h1>
-		<p class="text-2xl lg:text-4xl font-200 text-light-mt-8 max-w-200">
-			{{ paragraph }}
-		</p>
-		<CtaButton class="ml-auto mr-8 mt-8 lg:(mt-auto mb-16)" />
+	<section id="hasiera" class="flex pt-10 flex-col gap-2 w-full flex-grow">
+		<div class="pl-8 flex flex-col gap-4 pt-8 lg:pt-8 2xl:pt-16">
+			<img src="/zb-website/logo-lerro.svg" class="<sm:w-full sm:w-100 lg:w-200 pr-4" alt="Zirkinik bez logoa">
+			<div class="flex flex-col gap-2 border-t border-neutral-400 pt-2 text-light-200">
+				<h1 class="text-xl font-500 text-neutral-400 xl:text-2xl">{{ header }} </h1>
+				<Contact class="text-4xl xl:text-4xl text-neutral-300"/>
+			</div>
+		</div>
 	</section>
 </template>
 
 <script setup lang="ts">
-import CtaButton from './CtaButton.vue';
-
+import Contact from './Contact.vue';
 const header = "Euskal erromeria taldea"
-const paragraph = "Ska, rock zein punk doinuak zuen herriko oholtzara eramaterko irrikitan gaude!"
 </script>
 
 <style scoped>
+
 @media (max-width: 430px) {
 	section {
-		background-image: url('/zb-website/header.webp') !important;
-		background-position: 90% -50% !important;
+		background-position: 0px -100px; 
+	}
+}
+
+@media (min-width: 430px) and (max-width: 1024px) {
+	section {
+		background-position: 0px -200px ; 
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+	section {
+		background-position: 0px -500px ; 
+	}
+}
+@media (min-width: 1440px) and (max-width:2800px) {
+	section {
+		background-position: 0px -700px ; 
+	}
+}
+@media (min-width: 2800px) {
+	section {
+		background-position: 0px -1600px ; 
 	}
 }
 section {
-
-	background-image: url('/zb-website/header2.webp');
-	background-position: right;
+	background-image: url('/zb-website/header.png');
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-color: #000;
 }
 </style>

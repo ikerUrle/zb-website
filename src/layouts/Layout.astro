@@ -22,8 +22,8 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="">
-		<Topbar client:only />
+	<body class="bg-dark-500">
+		<!-- <Topbar client:only /> -->
 		<slot />
 	</body>
 </html>
@@ -71,7 +71,5 @@ body {
 body:hover {
     scrollbar-color: #555 #f1f1f1;
 }
-
-
 
 </style>

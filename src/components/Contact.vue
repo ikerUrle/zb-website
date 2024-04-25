@@ -1,16 +1,11 @@
 <template>
-	<section class="pb-46 px-8 lg:(px-20)">
-		<h2 id="kontaktua" class="pt-26 lg:pt-36 mt-20 text-5xl text-red-700 font-bold uppercase">
-			Kontaktua
-		</h2>
-		<ul class="mt-8 lg:p-2 pb-4 flex <sm:flex-col sm:flex-row gap-4">
-			<ContactCard icon="i-carbon-logo-instagram" image="instagram" text="zirkinikbez" link="https://www.instagram.com/zirkinikbez/" />
-			<ContactCard icon="i-carbon-phone" image="phone" text="659975820 (Arkaitz)" link="tel:+34659975820"/>
-			<ContactCard icon="i-carbon-email" image="email" text="info@zirkinikbez.eus" link="mailto:info@zirkinikbez.eus"/>
+		<ul class="flex gap-4 flex-wrap pb-2">
+			<ContactButton icon="i-carbon-phone" image="phone" text="659 975 820" link="tel:+34659975820"/>
+			<ContactButton icon="i-carbon-logo-instagram" image="instagram" text="zirkinikbez" link="https://www.instagram.com/zirkinikbez/" />
+			<ContactButton icon="i-carbon-email" image="email" text="info@erromeriak.eus" link="mailto:info@erromeriak.eus"/>
 		</ul>
-	</section>
 </template>
 
 <script setup lang="ts">
-import ContactCard from './ContactCard.vue';
+import ContactButton from './ContactButton.vue';
 </script>
