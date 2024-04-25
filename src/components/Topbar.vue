@@ -1,7 +1,6 @@
 <template>
 	<div class="p-4 py-6 fixed top-0 w-full z-2" :class="{ '<lg:(bg-dark-600/84 h-full)': isMenuOpen }">
 		<div class="flex justify-end items-center sticky top-0 text-white-500">
-			<!-- <img src="/zb-website/logo-header.svg" class="w-80 fill-blue-500"> -->
 			<span class="lg:hidden text-5xl color-red-700 text-shadow-xl p-1 " @click="isMenuOpen = !isMenuOpen">
 				<div class="i-circum-instagram" />
 			</span>

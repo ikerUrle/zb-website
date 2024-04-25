@@ -3,7 +3,7 @@
 		>
 		<div
 			:style="`background-image: url('/zb-website/cards/${i}.webp');`"
-			class="card rounded-4 w-120px h-220px sm:(w-180px) lg:(w-220px h-320px) xl:(w-320px h-420px)"
+			class="card rounded-4 w-120px h-220px sm:(w-180px) lg:(w-220px h-320px) 2xl:(w-320px h-420px)"
 			>
 		</div>
 
@@ -39,7 +39,7 @@ const props = defineProps<Props>()
 const numImages = 6
 const i = props.index % numImages;
 const dateOpts: Intl.DateTimeFormatOptions = {
-  weekday: 'long',
+  // weekday: 'long',
   month: 'short',
   day: 'numeric',
 };
