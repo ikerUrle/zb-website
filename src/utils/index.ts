@@ -52,7 +52,7 @@ export const dates: Date[] = [
 		date: "2024-08-31",
 	},
 	{
-		city: "Otxagabia",
+		city: "Otsagabia",
 		date: "2024-09-06",
 	},
 	{

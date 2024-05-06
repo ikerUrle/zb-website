@@ -2,7 +2,7 @@
   <li class="relative flex flex-col gap-2 h-full">
     <div
       :style="`background-image: url('/zb-website/cards/${i}.webp');`"
-      class="card rounded-4 w-120px h-220px sm:(w-180px) lg:(w-220px h-320px) 2xl:(w-320px h-420px) opacity-50"
+      class="card rounded-4 w-120px h-220px sm:(w-180px) lg:(w-220px h-320px) 2xl:(w-280px h-320px) opacity-50"
     />
 
     <!-- <img :src="`/zb-website/cards/${i}.webp`" height="220" width=""> -->
@@ -11,7 +11,7 @@
         {{ parsedDate ? parsedDate : date.extra }}
       </span>
       <span v-if="date.hide" class="text-sm text-#A9A8A8 text-xl 2xl:text-3xl">
-				???
+        ???
       </span>
       <span v-else class="text-sm text-#A9A8A8 text-xl 2xl:text-3xl">
         {{ date.city || " " }}

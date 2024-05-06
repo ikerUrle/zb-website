@@ -17,37 +17,58 @@ const header = "Euskal erromeria taldea"
 
 <style scoped>
 
-@media (max-width: 430px) {
+/* 430px ??*/
+
+@media (max-width: 640px) {
+	/* Mobile danak */
 	section {
-		background-position: 0px -100px; 
+		/* background-position: 0px -100px;  */
 	}
 }
 
-@media (min-width: 430px) and (max-width: 1024px) {
+@media (min-width: 640px) and (max-width: 768px) {
+	/* sm*/
 	section {
-		background-position: 0px -200px ; 
+	background-image: url('/zb-website/sm.png') !important;
+		/* background-position: 0px -200px ;  */
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	/* Tablet md */
+	section {
+	background-image: url('/zb-website/sm.png') !important;
+		/* background-position: 0px -200px ;  */
 	}
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
+	/* Laptop lg*/
 	section {
-		background-position: 0px -500px ; 
+		background-image: url('/zb-website/xl.png') !important;
+		/* background-position: 0px -250px ;  */
 	}
 }
-@media (min-width: 1440px) and (max-width:2800px) {
+@media (min-width: 1280px) and (max-width:1536px) {
+	/* xl*/
 	section {
-		background-position: 0px -700px ; 
+		background-image: url('/zb-website/xl.png') !important;
+		/* background-position: -200px 0px ;  */
 	}
 }
-@media (min-width: 2800px) {
+@media (min-width: 1536px) {
+	/* 2xl*/
 	section {
-		background-position: 0px -1600px ; 
+		background-image: url('/zb-website/2xl.png') !important;
+		/* background-position: 0px 0px ;  */
 	}
 }
 section {
-	background-image: url('/zb-website/header.png');
+	background-image: url('/zb-website/base.png');
 	background-size: cover;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-color: #000;
 }
+
+
 </style>
