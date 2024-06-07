@@ -3,7 +3,7 @@
 		<div class="pl-8 flex flex-col gap-4 pt-8 lg:pt-8 2xl:pt-16">
 			<img src="/zb-website/logo-lerro.svg" class="<sm:w-full sm:w-100 lg:w-200 pr-4" alt="Zirkinik bez logoa">
 			<div class="flex flex-col gap-2 border-t border-neutral-400 pt-2 text-light-200">
-				<h1 class="text-xl font-500 text-neutral-400 xl:text-2xl">{{ header }} </h1>
+				<h1 class="text-xl font-500 text-neutral-200 xl:text-2xl">{{ header }} </h1>
 				<Contact class="text-4xl xl:text-4xl text-neutral-300"/>
 			</div>
 		</div>

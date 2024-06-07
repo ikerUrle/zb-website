@@ -20,7 +20,6 @@ export const dates: Date[] = [
 	{
 		city: "La Quadra",
 		date: "2024-06-29",
-		hide: true,
 	},
 	{
 		city: "Foru",
@@ -29,11 +28,15 @@ export const dates: Date[] = [
 	{
 		city: "Lurgorri",
 		date: "2024-08-10",
-		hide: true,
+		hide: false,
 	},
 	{
 		city: "Luhuso",
 		date: "2024-08-16",
+	},
+	{
+		city: "Arrankudiaga",
+		date: "2024-08-19",
 	},
 	{
 		city: "Bilbo",

@@ -13,7 +13,7 @@ const { title } = Astro.props;
 	<head>
 		<ViewTransitions />
 		<meta charset="UTF-8" />
-		<meta name="description" content="Zirkinik bez! Euskal erromeria taldea" />
+		<meta name="description" content="Zirkinik bez! Euskal erromeria musika taldea" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/zb-website/favicon.svg" />
 		<link rel="preload" fetchpriority="high" as="image" href="/zb-website/header.webp" type="image/webp">
@@ -42,6 +42,8 @@ body {
 	height: 100dvh;
 }
 
+
+
 /* For Chrome, Safari, and newer versions of Edge */
 ::-webkit-scrollbar {
     width: 8px ; /* width of the scrollbar */
@@ -61,14 +63,12 @@ body {
     background-color: #555; /* color of the thumb on hover */
 }
 
-
-/* For Firefox */
-body {
+@supports not selector(::-webkit-scrollbar) body {
     scrollbar-color: #888 #f1f1f1;
     scrollbar-width: thin;
 }
 
-body:hover {
+@supports not selector(::-webkit-scrollbar) body:hover {
     scrollbar-color: #555 #f1f1f1;
 }
 

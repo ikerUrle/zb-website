@@ -7,13 +7,13 @@
 
     <!-- <img :src="`/zb-website/cards/${i}.webp`" height="220" width=""> -->
     <span class="pl-1 whitespace-pre flex flex-col">
-      <span class="text-base font-thin text-#787878 xl:text-lg">
+      <span class="text-base font-thin text-#b0afaf xl:text-lg">
         {{ parsedDate ? parsedDate : date.extra }}
       </span>
-      <span v-if="date.hide" class="text-sm text-#A9A8A8 text-xl 2xl:text-3xl">
+      <span v-if="date.hide" class="text-sm text-#9b9b9b text-xl 2xl:text-3xl">
         ???
       </span>
-      <span v-else class="text-sm text-#A9A8A8 text-xl 2xl:text-3xl">
+      <span v-else class="text-sm text-#d5d5d5 text-xl 2xl:text-3xl">
         {{ date.city || " " }}
       </span>
     </span>
@@ -54,8 +54,6 @@ const parsedDate = computed(
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  /* width:120px !important; */
-  /* height:220px !important; */
 }
 
 .gradient-overlay {
