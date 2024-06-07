@@ -35,8 +35,10 @@ type Props = {
 
 const props = defineProps<Props>();
 
-const numImages = 6;
+const numImages = 11;
+
 const i = props.index % numImages;
+// const i = Math.floor(Math.random() * (numImages - 0 + 1) + numImages);
 const dateOpts: Intl.DateTimeFormatOptions = {
   // weekday: 'long',
   month: "short",
@@ -55,6 +57,7 @@ const parsedDate = computed(
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 
 .gradient-overlay {
   position: absolute;
