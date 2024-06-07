@@ -17,15 +17,6 @@ const header = "Euskal erromeria taldea"
 
 <style scoped>
 
-/* 430px ??*/
-
-@media (max-width: 640px) {
-	/* Mobile danak */
-	section {
-		/* background-position: 0px -100px;  */
-	}
-}
-
 @media (min-width: 640px) and (max-width: 768px) {
 	/* sm*/
 	section {
