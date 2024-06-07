@@ -10,7 +10,7 @@ import transformerVariantGroup from '@unocss/transformer-variant-group';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://ikerurle.github.io',
-  base: '/zb-website',
+  base: '/',
   integrations: [
     vue(),
     // tailwind(),

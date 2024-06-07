@@ -1,11 +1,10 @@
 <template>
   <li class="relative flex flex-col gap-2 h-full">
     <div
-      :style="`background-image: url('/zb-website/cards/${i}.webp');`"
+      :style="`background-image: url('/cards/${i}.webp');`"
       class="card rounded-4 w-120px h-220px sm:(w-180px) lg:(w-220px h-320px) 2xl:(w-280px h-320px) opacity-50"
     />
 
-    <!-- <img :src="`/zb-website/cards/${i}.webp`" height="220" width=""> -->
     <span class="pl-1 whitespace-pre flex flex-col">
       <span class="text-base font-thin text-#b0afaf xl:text-lg">
         {{ parsedDate ? parsedDate : date.extra }}
