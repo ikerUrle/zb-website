@@ -1,24 +1,25 @@
 <template>
-	<li class="" >
-		<a :href="link"
-			class="flex flex w-full gap-2 items-center justify-center font-200">
-			<span :class="icon" class="" />
-			<!-- {{ text }} -->
-		</a>
-		<!-- <div class="gradient-overlay" /> -->
-	</li>
+  <li class="">
+    <a
+      :href="link"
+      class="flex flex w-full gap-2 items-center justify-center font-200"
+      :aria-label="text"
+    >
+      <span :class="icon" class="" />
+      <!-- {{ text }} -->
+    </a>
+    <!-- <div class="gradient-overlay" /> -->
+  </li>
 </template>
 
 <script setup lang="ts">
-
 type Props = {
-	text: string,
-	icon: string,
-	link: string,
-}
+  text: string;
+  icon: string;
+  link: string;
+};
 
-defineProps<Props>()
-
+defineProps<Props>();
 </script>
 
 <style scoped>
