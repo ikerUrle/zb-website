@@ -5,7 +5,7 @@
     <h2 id="kontzertuak" class="py-6 text-lg font-regular xl:text-xl">
       Hurrengo kontzertuak
     </h2>
-    <ConcertList client:only />
+    <ConcertList client:load />
   </section>
 </template>
 
