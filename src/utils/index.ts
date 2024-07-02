@@ -59,34 +59,21 @@ export const dates: Date[] = [
 		date: "2024-09-06",
 	},
 	{
+		city: "Mamariga",
+		date: "2024-09-07",
+	},
+	{
+		city: "Karrantza",
+		date: "2024-09-14",
+	},
+	{
+		city: "Markina-Xemein",
+		date: "2024-09-27",
+	},
+	{
 		city: "",
 		date: null,
 		extra: "Laster gehiago"
 	},
-	// {
-	// 	city: "Bilbo",
-	// 	date: "Ekainak 23",
-	// 	extra: "21:00"
-	// },
-	// {
-	// 	city: "Bilbo",
-	// 	date: "Ekainak 23",
-	// 	extra: "21:00"
-	// },
-	// {
-	// 	city: "???",
-	// 	date: "Azaroak 25",
-	// 	extra: "21:00"
-	// },
-	// {
-	// 	city: "Bilbo",
-	// 	date: "Ekainak 23",
-	// 	extra: "21:00"
-	// },
-	// {
-	// 	city: "Bilbo",
-	// 	date: "Ekainak 23",
-	// 	extra: "21:00"
-	// }
 ]
 
