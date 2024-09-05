@@ -63,12 +63,24 @@ export const dates: Date[] = [
 		date: "2024-09-07",
 	},
 	{
+		city: "Olarizu (Gasteiz)",
+		date: "2024-09-09",
+	},
+	{
 		city: "Karrantza",
 		date: "2024-09-14",
 	},
 	{
 		city: "Markina-Xemein",
 		date: "2024-09-27",
+	},
+	{
+		city: "Gesaltza",
+		date: "2024-10-05",
+	},
+	{
+		city: "Mungia",
+		date: "2024-10-31",
 	},
 	{
 		city: "",
