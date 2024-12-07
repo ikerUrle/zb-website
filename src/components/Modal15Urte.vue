@@ -4,11 +4,17 @@
   >
     <div class="text-red-400 uppercase font-black text-6xl sm:text-8xl">15 urte</div>
     <div class="text-light-900">2025 - #HankazGora</div>
-    <div class="text-dark-100">Prestatzen...</div>
+    <div class="text-2xl">
+      <Contact />
+    </div>
+    <div class="text-#888">Prestatzen...</div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+import Contact from './Contact.vue';
+</script>
 
 <style scoped>
 .modal {
