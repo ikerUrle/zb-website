@@ -2,12 +2,12 @@
   <div
     class="modal absolute inset-0 z-2000 flex flex-col items-center justify-center"
   >
-    <div class="text-red-400 uppercase font-black text-6xl sm:text-8xl">15 urte</div>
-    <div class="text-2xl">
+    <div class="text-red-400 uppercase font-black text-4xl sm:text-8xl py-2">Bira hasiera!</div>
+    <div class="text-xl sm:text-4xl text-#aaa">Otsailak 28 - Astra (Gernika)</div>
+    <div class="text-2xl sm:text-4xl">
       <Contact />
     </div>
-    <div class="text-light-900">2025 - #HankazGora</div>
-    <div class="text-#666">Prestatzen...</div>
+    <div class="text-#666 sm:text-2xl">Prestatzen...</div>
   </div>
 </template>
 
