@@ -6,81 +6,66 @@ export type Date = {
 }
 export const dates: Date[] = [
 	{
-		city: "Laudio",
-		date: "2025-04-11",
+		city: "Irun",
+		date: "2025-06-21",
+	},
+	{
+		city: "Iurreta",
+		date: "2025-06-23",
+	},
+	{
+		city: "Apatamonasterio",
+		date: "2025-06-28",
+	},
+	{
+		city: "Portugalete",
+		date: "2025-07-01",
 	},
 	{
 		city: "Erandio",
-		date: "2024-05-31",
+		date: "2025-07-12",
 	},
 	{
-		city: "Igorre",
-		date: "2024-06-08",
+		city: "Zornotza",
+		date: "2025-07-19",
 	},
 	{
-		city: "La Quadra",
-		date: "2024-06-29",
+		city: "Busturi",
+		date: "2025-07-24",
 	},
 	{
-		city: "Foru",
-		date: "2024-07-26",
-	},
-	{
-		city: "Lurgorri",
-		date: "2024-08-10",
-		hide: false,
-	},
-	{
-		city: "Luhuso",
-		date: "2024-08-16",
-	},
-	{
-		city: "Arrankudiaga",
-		date: "2024-08-19",
-	},
-	{
-		city: "Bilbo",
-		date: "2024-08-21",
-	},
-	{
-		city: "Laudio",
-		date: "2024-08-23",
+		city: "Gernika",
+		date: "2025-08-14",
 	},
 	{
 		city: "Larrabetzu",
-		date: "2024-08-30",
+		date: "2025-08-15",
+		hide: true,
 	},
 	{
-		city: "Orozko",
-		date: "2024-08-31",
+		city: "Bilbo",
+		date: "2025-08-20",
+		hide: true,
 	},
 	{
-		city: "Otsagabia",
-		date: "2024-09-06",
+		city: "Bakio",
+		date: "2025-08-28",
+		hide: true,
 	},
 	{
-		city: "Mamariga",
-		date: "2024-09-07",
+		city: "Artea",
+		date: "2025-09-06",
+		hide: true,
 	},
 	{
-		city: "Olarizu (Gasteiz)",
-		date: "2024-09-09",
+		city: "Laukiz",
+		date: "2025-09-26",
+		hide: true,
 	},
 	{
-		city: "Karrantza",
-		date: "2024-09-14",
-	},
-	{
-		city: "Markina-Xemein",
-		date: "2024-09-27",
-	},
-	{
-		city: "Gesaltza",
-		date: "2024-10-05",
-	},
-	{
-		city: "Mungia",
-		date: "2024-10-31",
+		city: "Mendata",
+		date: "2025-09-27",
+		hide: true,
 	},
 	{
 		city: "",
